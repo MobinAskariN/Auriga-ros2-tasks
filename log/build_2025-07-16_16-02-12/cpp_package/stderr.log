@@ -1,0 +1,28 @@
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+                 from [01m[K/home/mobin/auriga_ros2_tasks/src/cpp_package/src/cpp_node.cpp:1[m[K:
+[01m[K/home/mobin/auriga_ros2_tasks/src/cpp_package/src/cpp_node.cpp:[m[K In constructor ‘[01m[KCppNode::[01;32m[KCppNode[m[K()[m[K’:
+[01m[K/home/mobin/auriga_ros2_tasks/src/cpp_package/src/cpp_node.cpp:18:41:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Klong int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   18 |         RCLCPP_INFO(this->get_logger(), [01;35m[K"Starting number: %d"[m[K, [32m[Kcurrent_num_[m[K);
+      |                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~[m[K
+      |                                                                [32m[K|[m[K
+      |                                                                [32m[Klong int[m[K
+[01m[K/home/mobin/auriga_ros2_tasks/src/cpp_package/src/cpp_node.cpp:18:60:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   18 |         RCLCPP_INFO(this->get_logger(), "Starting number: [01;36m[K%d[m[K", current_num_);
+      |                                                           [01;36m[K~^[m[K
+      |                                                            [01;36m[K|[m[K
+      |                                                            [01;36m[Kint[m[K
+      |                                                           [32m[K%ld[m[K
+[01m[K/home/mobin/auriga_ros2_tasks/src/cpp_package/src/cpp_node.cpp:[m[K In member function ‘[01m[Kvoid CppNode::[01;32m[Ktopic_callback[m[K(interfaces::msg::Num_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/mobin/auriga_ros2_tasks/src/cpp_package/src/cpp_node.cpp:45:41:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Klong int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   45 |         RCLCPP_INFO(this->get_logger(), [01;35m[K"Received: %d"[m[K, [32m[Kcurrent_num_[m[K);
+      |                                         [01;35m[K^~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~[m[K
+      |                                                         [32m[K|[m[K
+      |                                                         [32m[Klong int[m[K
+[01m[K/home/mobin/auriga_ros2_tasks/src/cpp_package/src/cpp_node.cpp:45:53:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   45 |         RCLCPP_INFO(this->get_logger(), "Received: [01;36m[K%d[m[K", current_num_);
+      |                                                    [01;36m[K~^[m[K
+      |                                                     [01;36m[K|[m[K
+      |                                                     [01;36m[Kint[m[K
+      |                                                    [32m[K%ld[m[K

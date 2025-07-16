@@ -1,0 +1,1 @@
+/home/mobin/auriga_ros2_tasks/build/cpp_package/ament_cmake_core/cpp_packageConfig-version.cmake

@@ -1,0 +1,22 @@
+[1.678s] Invoking command in '/home/mobin/auriga_ros2_tasks/src/py_package': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mobin/auriga_ros2_tasks/build/py_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mobin/auriga_ros2_tasks/install/py_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_package build --build-base /home/mobin/auriga_ros2_tasks/build/py_package/build install --record /home/mobin/auriga_ros2_tasks/build/py_package/install.log --single-version-externally-managed install_data
+[2.159s] running egg_info
+[2.198s] writing ../../build/py_package/py_package.egg-info/PKG-INFO
+[2.198s] writing dependency_links to ../../build/py_package/py_package.egg-info/dependency_links.txt
+[2.199s] writing entry points to ../../build/py_package/py_package.egg-info/entry_points.txt
+[2.199s] writing requirements to ../../build/py_package/py_package.egg-info/requires.txt
+[2.199s] writing top-level names to ../../build/py_package/py_package.egg-info/top_level.txt
+[2.283s] reading manifest file '../../build/py_package/py_package.egg-info/SOURCES.txt'
+[2.284s] adding license file 'LICENSE'
+[2.285s] writing manifest file '../../build/py_package/py_package.egg-info/SOURCES.txt'
+[2.285s] running build
+[2.285s] running build_py
+[2.285s] running install
+[2.296s] running install_lib
+[2.336s] running install_data
+[2.337s] running install_egg_info
+[2.377s] removing '/home/mobin/auriga_ros2_tasks/install/py_package/lib/python3.12/site-packages/py_package-0.0.0-py3.12.egg-info' (and everything under it)
+[2.378s] Copying ../../build/py_package/py_package.egg-info to /home/mobin/auriga_ros2_tasks/install/py_package/lib/python3.12/site-packages/py_package-0.0.0-py3.12.egg-info
+[2.380s] running install_scripts
+[2.642s] Installing py_node script to /home/mobin/auriga_ros2_tasks/install/py_package/lib/py_package
+[2.643s] writing list of installed files to '/home/mobin/auriga_ros2_tasks/build/py_package/install.log'
+[2.693s] Invoked command in '/home/mobin/auriga_ros2_tasks/src/py_package' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mobin/auriga_ros2_tasks/build/py_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mobin/auriga_ros2_tasks/install/py_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_package build --build-base /home/mobin/auriga_ros2_tasks/build/py_package/build install --record /home/mobin/auriga_ros2_tasks/build/py_package/install.log --single-version-externally-managed install_data

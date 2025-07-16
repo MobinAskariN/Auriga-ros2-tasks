@@ -1,0 +1,1 @@
+/home/mobin/auriga_ros2_tasks/build/cpp_package/ament_cmake_environment_hooks/local_setup.bash

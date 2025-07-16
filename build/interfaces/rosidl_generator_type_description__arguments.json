@@ -1,0 +1,7 @@
+{
+  "package_name": "interfaces",
+  "output_dir": "/home/mobin/auriga_ros2_tasks/build/interfaces/rosidl_generator_type_description/interfaces",
+  "idl_tuples": [
+    "/home/mobin/auriga_ros2_tasks/build/interfaces/rosidl_adapter/interfaces:msg/Num.idl"
+  ]
+}

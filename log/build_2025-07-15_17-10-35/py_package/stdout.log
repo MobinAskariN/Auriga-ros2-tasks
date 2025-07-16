@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating py_package.egg-info
+writing py_package.egg-info/PKG-INFO
+writing dependency_links to py_package.egg-info/dependency_links.txt
+writing entry points to py_package.egg-info/entry_points.txt
+writing requirements to py_package.egg-info/requires.txt
+writing top-level names to py_package.egg-info/top_level.txt
+writing manifest file 'py_package.egg-info/SOURCES.txt'
+reading manifest file 'py_package.egg-info/SOURCES.txt'
+writing manifest file 'py_package.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/mobin/auriga_ros2_tasks/install/py_package/lib/python3.12/site-packages/py-package.egg-link (link to .)
+Installing py_node script to /home/mobin/auriga_ros2_tasks/install/py_package/lib/py_package
+
+Installed /home/mobin/auriga_ros2_tasks/build/py_package
+running symlink_data
+creating /home/mobin/auriga_ros2_tasks/install/py_package/share/ament_index
+creating /home/mobin/auriga_ros2_tasks/install/py_package/share/ament_index/resource_index
+creating /home/mobin/auriga_ros2_tasks/install/py_package/share/ament_index/resource_index/packages
+symbolically linking /home/mobin/auriga_ros2_tasks/build/py_package/resource/py_package -> /home/mobin/auriga_ros2_tasks/install/py_package/share/ament_index/resource_index/packages
+symbolically linking /home/mobin/auriga_ros2_tasks/build/py_package/package.xml -> /home/mobin/auriga_ros2_tasks/install/py_package/share/py_package

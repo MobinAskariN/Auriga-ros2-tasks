@@ -1,0 +1,31 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/mobin/ros2_example/install/turtlesim/include/**",
+        "/home/mobin/ros2_example/install/examples_rclcpp_cbg_executor/include/**",
+        "/home/mobin/ros2_ws/install/ros2_control_test_assets/include/**",
+        "/home/mobin/ros2_ws/install/joint_limits/include/**",
+        "/home/mobin/ros2_ws/install/realtime_tools/include/**",
+        "/home/mobin/ros2_ws/install/kinematics_interface_kdl/include/**",
+        "/home/mobin/ros2_ws/install/kinematics_interface/include/**",
+        "/home/mobin/ros2_ws/install/controller_manager_msgs/include/**",
+        "/home/mobin/ros2_ws/install/control_msgs/include/**",
+        "/opt/ros/jazzy/include/**",
+        "/home/mobin/auriga_ros2_tasks/src/cpp_package/include/**",
+        "/usr/include/**",
+        "~/auriga_ros2_tasks/install/interfaces/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

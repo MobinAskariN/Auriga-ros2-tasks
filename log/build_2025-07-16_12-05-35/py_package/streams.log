@@ -1,0 +1,36 @@
+[2.011s] Invoking command in '/home/mobin/auriga_ros2_tasks/build/py_package': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mobin/auriga_ros2_tasks/build/py_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mobin/auriga_ros2_tasks/install/py_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/mobin/auriga_ros2_tasks/build/py_package/build
+[2.598s] running develop
+[3.023s] Removing /home/mobin/auriga_ros2_tasks/install/py_package/lib/python3.12/site-packages/py-package.egg-link (link to .)
+[3.079s] Invoked command in '/home/mobin/auriga_ros2_tasks/build/py_package' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mobin/auriga_ros2_tasks/build/py_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mobin/auriga_ros2_tasks/install/py_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/mobin/auriga_ros2_tasks/build/py_package/build
+[3.082s] Invoking command in '/home/mobin/auriga_ros2_tasks/src/py_package': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mobin/auriga_ros2_tasks/build/py_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mobin/auriga_ros2_tasks/install/py_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_package build --build-base /home/mobin/auriga_ros2_tasks/build/py_package/build install --record /home/mobin/auriga_ros2_tasks/build/py_package/install.log --single-version-externally-managed install_data --force
+[3.587s] running egg_info
+[3.625s] writing ../../build/py_package/py_package.egg-info/PKG-INFO
+[3.626s] writing dependency_links to ../../build/py_package/py_package.egg-info/dependency_links.txt
+[3.626s] writing entry points to ../../build/py_package/py_package.egg-info/entry_points.txt
+[3.626s] writing requirements to ../../build/py_package/py_package.egg-info/requires.txt
+[3.627s] writing top-level names to ../../build/py_package/py_package.egg-info/top_level.txt
+[3.704s] reading manifest file '../../build/py_package/py_package.egg-info/SOURCES.txt'
+[3.705s] adding license file 'LICENSE'
+[3.706s] writing manifest file '../../build/py_package/py_package.egg-info/SOURCES.txt'
+[3.706s] running build
+[3.706s] running build_py
+[3.706s] creating /home/mobin/auriga_ros2_tasks/build/py_package/build
+[3.707s] creating /home/mobin/auriga_ros2_tasks/build/py_package/build/lib
+[3.707s] creating /home/mobin/auriga_ros2_tasks/build/py_package/build/lib/py_package
+[3.707s] copying py_package/py_node.py -> /home/mobin/auriga_ros2_tasks/build/py_package/build/lib/py_package
+[3.707s] copying py_package/__init__.py -> /home/mobin/auriga_ros2_tasks/build/py_package/build/lib/py_package
+[3.708s] running install
+[3.719s] running install_lib
+[3.757s] creating /home/mobin/auriga_ros2_tasks/install/py_package/lib/python3.12/site-packages/py_package
+[3.758s] copying /home/mobin/auriga_ros2_tasks/build/py_package/build/lib/py_package/py_node.py -> /home/mobin/auriga_ros2_tasks/install/py_package/lib/python3.12/site-packages/py_package
+[3.758s] copying /home/mobin/auriga_ros2_tasks/build/py_package/build/lib/py_package/__init__.py -> /home/mobin/auriga_ros2_tasks/install/py_package/lib/python3.12/site-packages/py_package
+[3.759s] byte-compiling /home/mobin/auriga_ros2_tasks/install/py_package/lib/python3.12/site-packages/py_package/py_node.py to py_node.cpython-312.pyc
+[3.759s] byte-compiling /home/mobin/auriga_ros2_tasks/install/py_package/lib/python3.12/site-packages/py_package/__init__.py to __init__.cpython-312.pyc
+[3.760s] running install_data
+[3.760s] copying resource/py_package -> /home/mobin/auriga_ros2_tasks/install/py_package/share/ament_index/resource_index/packages
+[3.760s] copying package.xml -> /home/mobin/auriga_ros2_tasks/install/py_package/share/py_package
+[3.760s] running install_egg_info
+[3.801s] Copying ../../build/py_package/py_package.egg-info to /home/mobin/auriga_ros2_tasks/install/py_package/lib/python3.12/site-packages/py_package-0.0.0-py3.12.egg-info
+[3.803s] running install_scripts
+[4.062s] Installing py_node script to /home/mobin/auriga_ros2_tasks/install/py_package/lib/py_package
+[4.063s] writing list of installed files to '/home/mobin/auriga_ros2_tasks/build/py_package/install.log'

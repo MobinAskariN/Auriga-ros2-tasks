@@ -1,0 +1,165 @@
+[0.000000] (-) TimerEvent: {}
+[0.000476] (-) JobUnselected: {'identifier': 'interfaces'}
+[0.000551] (cpp_package) JobQueued: {'identifier': 'cpp_package', 'dependencies': OrderedDict({'interfaces': '/home/mobin/auriga_ros2_tasks/install/interfaces'})}
+[0.000624] (py_package) JobQueued: {'identifier': 'py_package', 'dependencies': OrderedDict({'interfaces': '/home/mobin/auriga_ros2_tasks/install/interfaces'})}
+[0.001402] (cpp_package) JobStarted: {'identifier': 'cpp_package'}
+[0.019466] (py_package) JobStarted: {'identifier': 'py_package'}
+[0.037574] (cpp_package) JobProgress: {'identifier': 'cpp_package', 'progress': 'cmake'}
+[0.038800] (cpp_package) JobProgress: {'identifier': 'cpp_package', 'progress': 'build'}
+[0.040023] (cpp_package) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mobin/auriga_ros2_tasks/build/cpp_package', '--', '-j16', '-l16'], 'cwd': '/home/mobin/auriga_ros2_tasks/build/cpp_package', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'XDG_ACTIVATION_TOKEN': 'gnome-shell/Terminator/2095-9-mobin_TIME9711473', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mobin', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/mobin/auriga_ros2_tasks/install/interfaces/lib:/home/mobin/ros2_example/install/turtlesim/lib:/home/mobin/ros2_example/install/examples_rclcpp_wait_set/lib:/home/mobin/ros2_example/install/examples_rclcpp_minimal_subscriber/lib:/home/mobin/ros2_example/install/examples_rclcpp_minimal_composition/lib:/home/mobin/ros2_ws/install/ros2_control_test_assets/lib:/home/mobin/ros2_ws/install/joint_limits/lib:/home/mobin/ros2_ws/install/realtime_tools/lib:/home/mobin/ros2_ws/install/kinematics_interface_kdl/lib:/home/mobin/ros2_ws/install/kinematics_interface/lib:/home/mobin/ros2_ws/install/controller_manager_msgs/lib:/home/mobin/ros2_ws/install/control_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mobin', 'OLDPWD': '/home/mobin', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1886', 'SYSTEMD_EXEC_PID': '2095', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '20597', '_colcon_cd_root': '/opt/ros/jazzy/', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/mobin/auriga_ros2_tasks/install:/home/mobin/ros2_example/install:/home/mobin/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mobin', 'IGN_GAZEBO_MODEL_PATH': '/opt/ros/jazzy/share', 'JOURNAL_STREAM': '8:22789', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'mobin', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/opt/ros/jazzy/share', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/mobin:@/tmp/.ICE-unix/2065,unix/mobin:/tmp/.ICE-unix/2065', 'INVOCATION_ID': '1dfba49dc19e4d6fa5ca2dcbba5f57b5', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.BUKW92', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/mobin/auriga_ros2_tasks/install/py_package:/home/mobin/auriga_ros2_tasks/install/cpp_package:/home/mobin/auriga_ros2_tasks/install/interfaces:/home/mobin/ros2_example/install/turtlesim:/home/mobin/ros2_example/install/py_package:/home/mobin/ros2_example/install/launch_testing_examples:/home/mobin/ros2_example/install/examples_rclpy_pointcloud_publisher:/home/mobin/ros2_example/install/examples_rclpy_minimal_subscriber:/home/mobin/ros2_example/install/examples_rclpy_minimal_service:/home/mobin/ros2_example/install/examples_rclpy_minimal_publisher:/home/mobin/ros2_example/install/examples_rclpy_minimal_client:/home/mobin/ros2_example/install/examples_rclpy_minimal_action_server:/home/mobin/ros2_example/install/examples_rclpy_minimal_action_client:/home/mobin/ros2_example/install/examples_rclpy_guard_conditions:/home/mobin/ros2_example/install/examples_rclpy_executors:/home/mobin/ros2_example/install/examples_rclcpp_wait_set:/home/mobin/ros2_example/install/examples_rclcpp_multithreaded_executor:/home/mobin/ros2_example/install/examples_rclcpp_minimal_timer:/home/mobin/ros2_example/install/examples_rclcpp_minimal_subscriber:/home/mobin/ros2_example/install/examples_rclcpp_minimal_service:/home/mobin/ros2_example/install/examples_rclcpp_minimal_publisher:/home/mobin/ros2_example/install/examples_rclcpp_minimal_composition:/home/mobin/ros2_example/install/examples_rclcpp_minimal_client:/home/mobin/ros2_example/install/examples_rclcpp_minimal_action_server:/home/mobin/ros2_example/install/examples_rclcpp_minimal_action_client:/home/mobin/ros2_example/install/examples_rclcpp_cbg_executor:/home/mobin/ros2_example/install/examples_rclcpp_async_client:/home/mobin/ros2_example/install/cpp_package:/home/mobin/ros2_ws/install/rqt_joint_trajectory_controller:/home/mobin/ros2_ws/install/ros2_controllers_test_nodes:/home/mobin/ros2_ws/install/ros2_control_test_assets:/home/mobin/ros2_ws/install/ros2_control_demo_description:/home/mobin/ros2_ws/install/joint_limits:/home/mobin/ros2_ws/install/realtime_tools:/home/mobin/ros2_ws/install/kinematics_interface_kdl:/home/mobin/ros2_ws/install/kinematics_interface:/home/mobin/ros2_ws/install/controller_manager_msgs:/home/mobin/ros2_ws/install/control_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:9afd6e3f-64e0-4c52-881b-4bcd7a48162b', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'GAZEBO_RESOURCE_PATH': '/opt/ros/jazzy/share', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mobin/auriga_ros2_tasks/build/cpp_package', 'QT_QPA_PLATFORM': 'xcb', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mobin/auriga_ros2_tasks/install/interfaces/lib/python3.12/site-packages:/home/mobin/auriga_ros2_tasks/install/py_package/lib/python3.12/site-packages:/home/mobin/ros2_example/install/turtlesim/lib/python3.12/site-packages:/home/mobin/ros2_example/install/py_package/lib/python3.12/site-packages:/home/mobin/ros2_example/install/launch_testing_examples/lib/python3.12/site-packages:/home/mobin/ros2_example/install/examples_rclpy_pointcloud_publisher/lib/python3.12/site-packages:/home/mobin/ros2_example/install/examples_rclpy_minimal_subscriber/lib/python3.12/site-packages:/home/mobin/ros2_example/install/examples_rclpy_minimal_service/lib/python3.12/site-packages:/home/mobin/ros2_example/install/examples_rclpy_minimal_publisher/lib/python3.12/site-packages:/home/mobin/ros2_example/install/examples_rclpy_minimal_client/lib/python3.12/site-packages:/home/mobin/ros2_example/install/examples_rclpy_minimal_action_server/lib/python3.12/site-packages:/home/mobin/ros2_example/install/examples_rclpy_minimal_action_client/lib/python3.12/site-packages:/home/mobin/ros2_example/install/examples_rclpy_guard_conditions/lib/python3.12/site-packages:/home/mobin/ros2_example/install/examples_rclpy_executors/lib/python3.12/site-packages:/home/mobin/ros2_ws/build/rqt_joint_trajectory_controller:/home/mobin/ros2_ws/install/rqt_joint_trajectory_controller/lib/python3.12/site-packages:/home/mobin/ros2_ws/build/ros2_controllers_test_nodes:/home/mobin/ros2_ws/install/ros2_controllers_test_nodes/lib/python3.12/site-packages:/home/mobin/ros2_ws/install/controller_manager_msgs/lib/python3.12/site-packages:/home/mobin/ros2_ws/install/control_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/mobin/auriga_ros2_tasks/install/interfaces:/home/mobin/auriga_ros2_tasks/install/cpp_package:/home/mobin/ros2_example/install/turtlesim:/home/mobin/ros2_example/install/examples_rclcpp_wait_set:/home/mobin/ros2_example/install/examples_rclcpp_multithreaded_executor:/home/mobin/ros2_example/install/examples_rclcpp_minimal_timer:/home/mobin/ros2_example/install/examples_rclcpp_minimal_subscriber:/home/mobin/ros2_example/install/examples_rclcpp_minimal_service:/home/mobin/ros2_example/install/examples_rclcpp_minimal_publisher:/home/mobin/ros2_example/install/examples_rclcpp_minimal_composition:/home/mobin/ros2_example/install/examples_rclcpp_minimal_client:/home/mobin/ros2_example/install/examples_rclcpp_minimal_action_server:/home/mobin/ros2_example/install/examples_rclcpp_minimal_action_client:/home/mobin/ros2_example/install/examples_rclcpp_cbg_executor:/home/mobin/ros2_example/install/examples_rclcpp_async_client:/home/mobin/ros2_example/install/cpp_package:/home/mobin/ros2_ws/install/ros2_control_test_assets:/home/mobin/ros2_ws/install/ros2_control_demo_description:/home/mobin/ros2_ws/install/joint_limits:/home/mobin/ros2_ws/install/realtime_tools:/home/mobin/ros2_ws/install/kinematics_interface_kdl:/home/mobin/ros2_ws/install/kinematics_interface:/home/mobin/ros2_ws/install/controller_manager_msgs:/home/mobin/ros2_ws/install/control_msgs:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/mobin/auriga_ros2_tasks/install/py_package:/home/mobin/ros2_example/install/py_package:/home/mobin/ros2_example/install/launch_testing_examples:/home/mobin/ros2_example/install/examples_rclpy_pointcloud_publisher:/home/mobin/ros2_example/install/examples_rclpy_minimal_subscriber:/home/mobin/ros2_example/install/examples_rclpy_minimal_service:/home/mobin/ros2_example/install/examples_rclpy_minimal_publisher:/home/mobin/ros2_example/install/examples_rclpy_minimal_client:/home/mobin/ros2_example/install/examples_rclpy_minimal_action_server:/home/mobin/ros2_example/install/examples_rclpy_minimal_action_client:/home/mobin/ros2_example/install/examples_rclpy_guard_conditions:/home/mobin/ros2_example/install/examples_rclpy_executors:/home/mobin/ros2_ws/install/rqt_joint_trajectory_controller:/home/mobin/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/jazzy'}), 'shell': False}
+[0.099603] (-) TimerEvent: {}
+[0.110851] (cpp_package) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.199738] (-) TimerEvent: {}
+[0.300267] (-) TimerEvent: {}
+[0.385398] (py_package) StderrLine: {'line': b'Traceback (most recent call last):\n  File "/usr/lib/python3/dist-packages/colcon_core/executor/__init__.py", line 91, in __call__\n    rc = await self.task(*args, **kwargs)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/colcon_core/task/__init__.py", line 93, in __call__\n    return await task_method(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/colcon_ros/task/ament_python/build.py", line 51, in build\n    setup_py_data = get_setup_data(self.context.pkg, env)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/colcon_core/task/python/__init__.py", line 20, in get_setup_data\n    return dict(pkg.metadata[key](env))\n                ^^^^^^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/colcon_ros/package_augmentation/ros_ament_python.py", line 57, in getter\n    return get_setup_information(\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/colcon_python_setup_py/package_identification/python_setup_py.py", line 249, in get_setup_information\n    _setup_information_cache[hashable_env] = _get_setup_information(\n                                             ^^^^^^^^^^^^^^^^^^^^^^^\n  File "/usr/lib/python3/dist-packages/colcon_python_setup_py/package_identification/python_setup_py.py", line 296, in _get_setup_information\n    result = subprocess.run(\n             ^^^^^^^^^^^^^^^\n  File "/usr/lib/python3.12/subprocess.py", line 571, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError: Command \'[\'/usr/bin/python3\', \'-c\', \'import sys;from contextlib import suppress;exec("with suppress(ImportError):    from setuptools.extern.packaging.specifiers    import SpecifierSet");exec("with suppress(ImportError):    from packaging.specifiers import SpecifierSet");from distutils.core import run_setup;dist = run_setup(    \\\'setup.py\\\', script_args=(\\\'--dry-run\\\',), stop_after=\\\'config\\\');skip_keys = (\\\'cmdclass\\\', \\\'distclass\\\', \\\'ext_modules\\\', \\\'metadata\\\');data = {    key: value for key, value in dist.__dict__.items()     if (        not key.startswith(\\\'_\\\') and         not callable(value) and         key not in skip_keys and         key not in dist.display_option_names    )};data[\\\'metadata\\\'] = {    k: v for k, v in dist.metadata.__dict__.items()     if k not in (\\\'license_files\\\', \\\'provides_extras\\\')};sys.stdout.buffer.write(repr(data).encode(\\\'utf-8\\\'))\']\' returned non-zero exit status 1.\n'}
+[0.386731] (py_package) JobEnded: {'identifier': 'py_package', 'rc': 1}
+[0.400450] (-) TimerEvent: {}
+[0.500981] (-) TimerEvent: {}
+[0.547278] (cpp_package) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.560429] (cpp_package) StdoutLine: {'line': b'-- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.601165] (-) TimerEvent: {}
+[0.618353] (cpp_package) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.635982] (cpp_package) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.660402] (cpp_package) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.687566] (cpp_package) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.701299] (-) TimerEvent: {}
+[0.801742] (-) TimerEvent: {}
+[0.808906] (cpp_package) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.813784] (cpp_package) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.901916] (-) TimerEvent: {}
+[0.955840] (cpp_package) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.002031] (-) TimerEvent: {}
+[1.079227] (cpp_package) StdoutLine: {'line': b'-- Found interfaces: 0.0.0 (/home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/cmake)\n'}
+[1.101637] (cpp_package) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[1.102027] (-) TimerEvent: {}
+[1.202407] (-) TimerEvent: {}
+[1.287184] (cpp_package) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.287622] (cpp_package) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/mobin/auriga_ros2_tasks/src/cpp_package/include>\n'}
+[1.287848] (cpp_package) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.288419] (cpp_package) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.290040] (cpp_package) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.290228] (cpp_package) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.290726] (cpp_package) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.292503] (cpp_package) StdoutLine: {'line': b'-- Configuring done (1.2s)\n'}
+[1.302747] (-) TimerEvent: {}
+[1.313888] (cpp_package) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[1.320973] (cpp_package) StdoutLine: {'line': b'-- Build files have been written to: /home/mobin/auriga_ros2_tasks/build/cpp_package\n'}
+[1.402909] (-) TimerEvent: {}
+[1.434987] (cpp_package) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/cpp_node.dir/src/cpp_node.cpp.o\x1b[0m\n'}
+[1.503094] (-) TimerEvent: {}
+[1.603646] (-) TimerEvent: {}
+[1.704203] (-) TimerEvent: {}
+[1.804682] (-) TimerEvent: {}
+[1.905227] (-) TimerEvent: {}
+[2.005800] (-) TimerEvent: {}
+[2.106596] (-) TimerEvent: {}
+[2.207385] (-) TimerEvent: {}
+[2.308073] (-) TimerEvent: {}
+[2.408516] (-) TimerEvent: {}
+[2.509002] (-) TimerEvent: {}
+[2.609434] (-) TimerEvent: {}
+[2.709903] (-) TimerEvent: {}
+[2.810325] (-) TimerEvent: {}
+[2.910745] (-) TimerEvent: {}
+[3.011170] (-) TimerEvent: {}
+[3.111596] (-) TimerEvent: {}
+[3.212058] (-) TimerEvent: {}
+[3.312483] (-) TimerEvent: {}
+[3.412931] (-) TimerEvent: {}
+[3.513356] (-) TimerEvent: {}
+[3.613805] (-) TimerEvent: {}
+[3.714218] (-) TimerEvent: {}
+[3.814656] (-) TimerEvent: {}
+[3.915079] (-) TimerEvent: {}
+[4.015515] (-) TimerEvent: {}
+[4.115966] (-) TimerEvent: {}
+[4.216408] (-) TimerEvent: {}
+[4.316885] (-) TimerEvent: {}
+[4.417310] (-) TimerEvent: {}
+[4.517703] (-) TimerEvent: {}
+[4.618134] (-) TimerEvent: {}
+[4.718552] (-) TimerEvent: {}
+[4.818989] (-) TimerEvent: {}
+[4.919396] (-) TimerEvent: {}
+[5.019821] (-) TimerEvent: {}
+[5.120261] (-) TimerEvent: {}
+[5.220699] (-) TimerEvent: {}
+[5.321125] (-) TimerEvent: {}
+[5.421552] (-) TimerEvent: {}
+[5.521987] (-) TimerEvent: {}
+[5.622380] (-) TimerEvent: {}
+[5.722845] (-) TimerEvent: {}
+[5.823266] (-) TimerEvent: {}
+[5.923710] (-) TimerEvent: {}
+[6.024135] (-) TimerEvent: {}
+[6.124549] (-) TimerEvent: {}
+[6.224994] (-) TimerEvent: {}
+[6.325422] (-) TimerEvent: {}
+[6.425864] (-) TimerEvent: {}
+[6.526587] (-) TimerEvent: {}
+[6.627022] (-) TimerEvent: {}
+[6.727437] (-) TimerEvent: {}
+[6.827893] (-) TimerEvent: {}
+[6.928463] (-) TimerEvent: {}
+[7.028919] (-) TimerEvent: {}
+[7.129375] (-) TimerEvent: {}
+[7.229827] (-) TimerEvent: {}
+[7.330253] (-) TimerEvent: {}
+[7.430705] (-) TimerEvent: {}
+[7.531545] (-) TimerEvent: {}
+[7.631998] (-) TimerEvent: {}
+[7.732428] (-) TimerEvent: {}
+[7.832876] (-) TimerEvent: {}
+[7.933289] (-) TimerEvent: {}
+[8.033714] (-) TimerEvent: {}
+[8.134128] (-) TimerEvent: {}
+[8.234544] (-) TimerEvent: {}
+[8.334981] (-) TimerEvent: {}
+[8.435398] (-) TimerEvent: {}
+[8.535838] (-) TimerEvent: {}
+[8.636257] (-) TimerEvent: {}
+[8.736698] (-) TimerEvent: {}
+[8.837104] (-) TimerEvent: {}
+[8.937521] (-) TimerEvent: {}
+[9.037959] (-) TimerEvent: {}
+[9.138362] (-) TimerEvent: {}
+[9.238795] (-) TimerEvent: {}
+[9.339212] (-) TimerEvent: {}
+[9.439655] (-) TimerEvent: {}
+[9.540095] (-) TimerEvent: {}
+[9.640527] (-) TimerEvent: {}
+[9.740955] (-) TimerEvent: {}
+[9.841362] (-) TimerEvent: {}
+[9.941771] (-) TimerEvent: {}
+[10.042176] (-) TimerEvent: {}
+[10.142819] (-) TimerEvent: {}
+[10.243229] (-) TimerEvent: {}
+[10.343630] (-) TimerEvent: {}
+[10.444036] (-) TimerEvent: {}
+[10.544439] (-) TimerEvent: {}
+[10.644862] (-) TimerEvent: {}
+[10.745257] (-) TimerEvent: {}
+[10.845661] (-) TimerEvent: {}
+[10.946065] (-) TimerEvent: {}
+[11.046467] (-) TimerEvent: {}
+[11.146893] (-) TimerEvent: {}
+[11.247294] (-) TimerEvent: {}
+[11.347895] (-) TimerEvent: {}
+[11.448273] (-) TimerEvent: {}
+[11.548566] (-) TimerEvent: {}
+[11.649014] (-) TimerEvent: {}
+[11.749390] (-) TimerEvent: {}
+[11.849747] (-) TimerEvent: {}
+[11.950155] (-) TimerEvent: {}
+[12.050568] (-) TimerEvent: {}
+[12.151001] (-) TimerEvent: {}
+[12.251428] (-) TimerEvent: {}
+[12.351862] (-) TimerEvent: {}
+[12.452492] (-) TimerEvent: {}
+[12.488068] (cpp_package) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable cpp_node\x1b[0m\n'}
+[12.552669] (-) TimerEvent: {}
+[12.653092] (-) TimerEvent: {}
+[12.753480] (-) TimerEvent: {}
+[12.777159] (cpp_package) StdoutLine: {'line': b'[100%] Built target cpp_node\n'}
+[12.794902] (cpp_package) JobEnded: {'identifier': 'cpp_package', 'rc': 'SIGINT'}
+[12.805903] (-) EventReactorShutdown: {}

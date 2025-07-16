@@ -1,0 +1,212 @@
+[0.027s] Invoking command in '/home/mobin/auriga_ros2_tasks/build/interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mobin/auriga_ros2_tasks/install/py_package:/home/mobin/ros2_example/install/py_package:/home/mobin/ros2_example/install/launch_testing_examples:/home/mobin/ros2_example/install/examples_rclpy_pointcloud_publisher:/home/mobin/ros2_example/install/examples_rclpy_minimal_subscriber:/home/mobin/ros2_example/install/examples_rclpy_minimal_service:/home/mobin/ros2_example/install/examples_rclpy_minimal_publisher:/home/mobin/ros2_example/install/examples_rclpy_minimal_client:/home/mobin/ros2_example/install/examples_rclpy_minimal_action_server:/home/mobin/ros2_example/install/examples_rclpy_minimal_action_client:/home/mobin/ros2_example/install/examples_rclpy_guard_conditions:/home/mobin/ros2_example/install/examples_rclpy_executors:/home/mobin/ros2_ws/install/rqt_joint_trajectory_controller:/home/mobin/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/mobin/auriga_ros2_tasks/build/interfaces -- -j16 -l16
+[0.083s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.135s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.283s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.447s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.461s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.534s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.585s] -- Found rosidl_adapter: 4.6.4 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.867s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[1.037s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.257s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.259s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[1.743s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[1.772s] -- Added test 'lint_cmake' to check CMake code style
+[1.774s] -- Added test 'xmllint' to check XML markup files
+[1.780s] -- Configuring done (1.7s)
+[1.836s] -- Generating done (0.0s)
+[1.858s] -- Build files have been written to: /home/mobin/auriga_ros2_tasks/build/interfaces
+[1.943s] [  2%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[1.965s] [  2%] Built target ament_cmake_python_copy_interfaces
+[2.265s] [  2%] Built target interfaces__rosidl_generator_type_description
+[2.292s] [  5%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.318s] [  8%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.384s] running egg_info
+[2.424s] writing interfaces.egg-info/PKG-INFO
+[2.424s] writing dependency_links to interfaces.egg-info/dependency_links.txt
+[2.425s] writing top-level names to interfaces.egg-info/top_level.txt
+[2.542s] reading manifest file 'interfaces.egg-info/SOURCES.txt'
+[2.543s] writing manifest file 'interfaces.egg-info/SOURCES.txt'
+[2.598s] [  8%] Built target ament_cmake_python_build_interfaces_egg
+[2.720s] [  8%] Built target interfaces__cpp
+[2.759s] [ 11%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/msg/detail/num__description.c.o[0m
+[2.759s] [ 17%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/msg/detail/num__functions.c.o[0m
+[2.759s] [ 17%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/msg/detail/num__type_support.c.o[0m
+[2.859s] [ 20%] [32m[1mLinking C shared library libinterfaces__rosidl_generator_c.so[0m
+[2.940s] [ 20%] Built target interfaces__rosidl_generator_c
+[2.965s] [ 26%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.965s] [ 26%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.965s] [ 29%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[2.967s] [ 35%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.967s] [ 35%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[2.967s] [ 38%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.358s] [ 41%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/msg/num__type_support.cpp.o[0m
+[3.360s] [ 44%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/msg/num__type_support.cpp.o[0m
+[3.390s] [ 47%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/msg/detail/num__type_support.c.o[0m
+[3.392s] [ 50%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/msg/detail/num__type_support.cpp.o[0m
+[3.418s] [ 52%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/msg/detail/dds_fastrtps/num__type_support.cpp.o[0m
+[3.426s] [ 55%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/msg/detail/num__type_support_c.cpp.o[0m
+[3.454s] [ 58%] [32m[1mLinking CXX shared library libinterfaces__rosidl_typesupport_c.so[0m
+[3.471s] [ 61%] [32m[1mLinking C shared library libinterfaces__rosidl_typesupport_introspection_c.so[0m
+[3.543s] [ 61%] Built target interfaces__rosidl_typesupport_introspection_c
+[3.547s] [ 61%] Built target interfaces__rosidl_typesupport_c
+[3.956s] [ 64%] [32m[1mLinking CXX shared library libinterfaces__rosidl_typesupport_cpp.so[0m
+[3.981s] [ 67%] [32m[1mLinking CXX shared library libinterfaces__rosidl_typesupport_introspection_cpp.so[0m
+[4.046s] [ 67%] Built target interfaces__rosidl_typesupport_cpp
+[4.072s] [ 67%] Built target interfaces__rosidl_typesupport_introspection_cpp
+[4.305s] [ 70%] [32m[1mLinking CXX shared library libinterfaces__rosidl_typesupport_fastrtps_c.so[0m
+[4.320s] [ 73%] [32m[1mLinking CXX shared library libinterfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[4.408s] [ 73%] Built target interfaces__rosidl_typesupport_fastrtps_c
+[4.424s] [ 73%] Built target interfaces__rosidl_typesupport_fastrtps_cpp
+[4.475s] [ 73%] Built target interfaces
+[4.525s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[4.983s] [ 76%] Built target interfaces__py
+[5.042s] [ 79%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_num_s.c.o[0m
+[5.269s] [ 82%] [32m[1mLinking C shared library libinterfaces__rosidl_generator_py.so[0m
+[5.360s] [ 82%] Built target interfaces__rosidl_generator_py
+[5.419s] [ 85%] [32mBuilding C object CMakeFiles/interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[5.419s] [ 91%] [32mBuilding C object CMakeFiles/interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[5.419s] [ 91%] [32mBuilding C object CMakeFiles/interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[5.621s] [ 94%] [32m[1mLinking C shared module rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_c.so[0m
+[5.626s] [ 97%] [32m[1mLinking C shared module rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_introspection_c.so[0m
+[5.634s] [100%] [32m[1mLinking C shared module rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.so[0m
+[5.694s] [100%] Built target interfaces_s__rosidl_typesupport_c
+[5.698s] [100%] Built target interfaces_s__rosidl_typesupport_introspection_c
+[5.708s] [100%] Built target interfaces_s__rosidl_typesupport_fastrtps_c
+[5.739s] Invoked command in '/home/mobin/auriga_ros2_tasks/build/interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mobin/auriga_ros2_tasks/install/py_package:/home/mobin/ros2_example/install/py_package:/home/mobin/ros2_example/install/launch_testing_examples:/home/mobin/ros2_example/install/examples_rclpy_pointcloud_publisher:/home/mobin/ros2_example/install/examples_rclpy_minimal_subscriber:/home/mobin/ros2_example/install/examples_rclpy_minimal_service:/home/mobin/ros2_example/install/examples_rclpy_minimal_publisher:/home/mobin/ros2_example/install/examples_rclpy_minimal_client:/home/mobin/ros2_example/install/examples_rclpy_minimal_action_server:/home/mobin/ros2_example/install/examples_rclpy_minimal_action_client:/home/mobin/ros2_example/install/examples_rclpy_guard_conditions:/home/mobin/ros2_example/install/examples_rclpy_executors:/home/mobin/ros2_ws/install/rqt_joint_trajectory_controller:/home/mobin/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/mobin/auriga_ros2_tasks/build/interfaces -- -j16 -l16
+[5.762s] Invoking command in '/home/mobin/auriga_ros2_tasks/build/interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mobin/auriga_ros2_tasks/install/py_package:/home/mobin/ros2_example/install/py_package:/home/mobin/ros2_example/install/launch_testing_examples:/home/mobin/ros2_example/install/examples_rclpy_pointcloud_publisher:/home/mobin/ros2_example/install/examples_rclpy_minimal_subscriber:/home/mobin/ros2_example/install/examples_rclpy_minimal_service:/home/mobin/ros2_example/install/examples_rclpy_minimal_publisher:/home/mobin/ros2_example/install/examples_rclpy_minimal_client:/home/mobin/ros2_example/install/examples_rclpy_minimal_action_server:/home/mobin/ros2_example/install/examples_rclpy_minimal_action_client:/home/mobin/ros2_example/install/examples_rclpy_guard_conditions:/home/mobin/ros2_example/install/examples_rclpy_executors:/home/mobin/ros2_ws/install/rqt_joint_trajectory_controller:/home/mobin/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/mobin/auriga_ros2_tasks/build/interfaces
+[5.782s] -- Install configuration: ""
+[5.783s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/ament_index/resource_index/rosidl_interfaces/interfaces
+[5.783s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/msg/Num.json
+[5.783s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces
+[5.783s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces/msg
+[5.783s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces/msg/num.h
+[5.784s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces/msg/detail
+[5.784s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces/msg/detail/num__struct.h
+[5.784s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces/msg/detail/num__type_support.c
+[5.784s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces/msg/detail/num__description.c
+[5.784s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces/msg/detail/num__functions.h
+[5.785s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces/msg/detail/num__functions.c
+[5.785s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces/msg/detail/num__type_support.h
+[5.785s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces/msg/rosidl_generator_c__visibility_control.h
+[5.785s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/environment/library_path.sh
+[5.785s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/environment/library_path.dsv
+[5.785s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/lib/libinterfaces__rosidl_generator_c.so
+[5.786s] -- Set non-toolchain portion of runtime path of "/home/mobin/auriga_ros2_tasks/install/interfaces/lib/libinterfaces__rosidl_generator_c.so" to ""
+[5.786s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces
+[5.787s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces/msg
+[5.787s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[5.787s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces/msg/detail
+[5.787s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h
+[5.787s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_c.so
+[5.788s] -- Set non-toolchain portion of runtime path of "/home/mobin/auriga_ros2_tasks/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[5.789s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces
+[5.789s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces/msg
+[5.789s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[5.789s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces/msg/detail
+[5.789s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces/msg/detail/num__rosidl_typesupport_introspection_c.h
+[5.789s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces/msg/detail/num__type_support.c
+[5.789s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_c.so
+[5.790s] -- Set non-toolchain portion of runtime path of "/home/mobin/auriga_ros2_tasks/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_c.so" to ""
+[5.790s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/lib/libinterfaces__rosidl_typesupport_c.so
+[5.791s] -- Set non-toolchain portion of runtime path of "/home/mobin/auriga_ros2_tasks/install/interfaces/lib/libinterfaces__rosidl_typesupport_c.so" to ""
+[5.791s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces
+[5.791s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces/msg
+[5.791s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces/msg/num.hpp
+[5.792s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces/msg/detail
+[5.792s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces/msg/detail/num__traits.hpp
+[5.792s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces/msg/detail/num__builder.hpp
+[5.792s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces/msg/detail/num__type_support.hpp
+[5.793s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces/msg/detail/num__struct.hpp
+[5.793s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[5.793s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces
+[5.793s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces/msg
+[5.793s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[5.794s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces/msg/detail
+[5.794s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces/msg/detail/num__rosidl_typesupport_fastrtps_cpp.hpp
+[5.794s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces/msg/detail/dds_fastrtps
+[5.794s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_cpp.so
+[5.795s] -- Set non-toolchain portion of runtime path of "/home/mobin/auriga_ros2_tasks/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[5.795s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces
+[5.795s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces/msg
+[5.795s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces/msg/detail
+[5.795s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces/msg/detail/num__rosidl_typesupport_introspection_cpp.hpp
+[5.796s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/include/interfaces/interfaces/msg/detail/num__type_support.cpp
+[5.796s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_cpp.so
+[5.797s] -- Set non-toolchain portion of runtime path of "/home/mobin/auriga_ros2_tasks/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[5.797s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/lib/libinterfaces__rosidl_typesupport_cpp.so
+[5.798s] -- Set non-toolchain portion of runtime path of "/home/mobin/auriga_ros2_tasks/install/interfaces/lib/libinterfaces__rosidl_typesupport_cpp.so" to ""
+[5.798s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/environment/pythonpath.sh
+[5.798s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/environment/pythonpath.dsv
+[5.798s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/lib/python3.12/site-packages/interfaces-0.0.0-py3.12.egg-info
+[5.798s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/lib/python3.12/site-packages/interfaces-0.0.0-py3.12.egg-info/SOURCES.txt
+[5.799s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/lib/python3.12/site-packages/interfaces-0.0.0-py3.12.egg-info/PKG-INFO
+[5.799s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/lib/python3.12/site-packages/interfaces-0.0.0-py3.12.egg-info/top_level.txt
+[5.799s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/lib/python3.12/site-packages/interfaces-0.0.0-py3.12.egg-info/dependency_links.txt
+[5.799s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/lib/python3.12/site-packages/interfaces
+[5.800s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/lib/python3.12/site-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.so
+[5.800s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/lib/python3.12/site-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[5.800s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/lib/python3.12/site-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[5.801s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/lib/python3.12/site-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_c.c
+[5.801s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/lib/python3.12/site-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.so
+[5.801s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/lib/python3.12/site-packages/interfaces/msg
+[5.801s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/lib/python3.12/site-packages/interfaces/msg/_num.py
+[5.801s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/lib/python3.12/site-packages/interfaces/msg/_num_s.c
+[5.802s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/lib/python3.12/site-packages/interfaces/msg/__init__.py
+[5.802s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/lib/python3.12/site-packages/interfaces/interfaces_s__rosidl_typesupport_c.so
+[5.802s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/lib/python3.12/site-packages/interfaces/__init__.py
+[5.877s] Listing '/home/mobin/auriga_ros2_tasks/install/interfaces/lib/python3.12/site-packages/interfaces'...
+[5.877s] Compiling '/home/mobin/auriga_ros2_tasks/install/interfaces/lib/python3.12/site-packages/interfaces/__init__.py'...
+[5.877s] Listing '/home/mobin/auriga_ros2_tasks/install/interfaces/lib/python3.12/site-packages/interfaces/msg'...
+[5.878s] Compiling '/home/mobin/auriga_ros2_tasks/install/interfaces/lib/python3.12/site-packages/interfaces/msg/__init__.py'...
+[5.878s] Compiling '/home/mobin/auriga_ros2_tasks/install/interfaces/lib/python3.12/site-packages/interfaces/msg/_num.py'...
+[5.887s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/lib/python3.12/site-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.so
+[5.888s] -- Set non-toolchain portion of runtime path of "/home/mobin/auriga_ros2_tasks/install/interfaces/lib/python3.12/site-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""
+[5.888s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/lib/python3.12/site-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.so
+[5.889s] -- Set non-toolchain portion of runtime path of "/home/mobin/auriga_ros2_tasks/install/interfaces/lib/python3.12/site-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.so" to ""
+[5.889s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/lib/python3.12/site-packages/interfaces/interfaces_s__rosidl_typesupport_c.so
+[5.890s] -- Set non-toolchain portion of runtime path of "/home/mobin/auriga_ros2_tasks/install/interfaces/lib/python3.12/site-packages/interfaces/interfaces_s__rosidl_typesupport_c.so" to ""
+[5.890s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/lib/libinterfaces__rosidl_generator_py.so
+[5.891s] -- Set non-toolchain portion of runtime path of "/home/mobin/auriga_ros2_tasks/install/interfaces/lib/libinterfaces__rosidl_generator_py.so" to ""
+[5.891s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/msg/Num.idl
+[5.892s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/msg/Num.msg
+[5.892s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/ament_index/resource_index/package_run_dependencies/interfaces
+[5.892s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/ament_index/resource_index/parent_prefix_path/interfaces
+[5.892s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/environment/ament_prefix_path.sh
+[5.893s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/environment/ament_prefix_path.dsv
+[5.893s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/environment/path.sh
+[5.893s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/environment/path.dsv
+[5.893s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/local_setup.bash
+[5.893s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/local_setup.sh
+[5.893s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/local_setup.zsh
+[5.894s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/local_setup.dsv
+[5.894s] -- Installing: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/package.dsv
+[5.894s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/ament_index/resource_index/packages/interfaces
+[5.894s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cExport.cmake
+[5.894s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cExport-noconfig.cmake
+[5.894s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[5.895s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[5.895s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cExport.cmake
+[5.895s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[5.895s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cExport.cmake
+[5.895s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[5.895s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cppExport.cmake
+[5.895s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[5.895s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[5.896s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[5.896s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[5.896s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cppExport.cmake
+[5.896s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[5.896s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_pyExport.cmake
+[5.896s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[5.896s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/cmake/rosidl_cmake-extras.cmake
+[5.896s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.897s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[5.897s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[5.897s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[5.897s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.897s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[5.897s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/cmake/interfacesConfig.cmake
+[5.897s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/cmake/interfacesConfig-version.cmake
+[5.897s] -- Up-to-date: /home/mobin/auriga_ros2_tasks/install/interfaces/share/interfaces/package.xml
+[5.901s] Invoked command in '/home/mobin/auriga_ros2_tasks/build/interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mobin/auriga_ros2_tasks/install/py_package:/home/mobin/ros2_example/install/py_package:/home/mobin/ros2_example/install/launch_testing_examples:/home/mobin/ros2_example/install/examples_rclpy_pointcloud_publisher:/home/mobin/ros2_example/install/examples_rclpy_minimal_subscriber:/home/mobin/ros2_example/install/examples_rclpy_minimal_service:/home/mobin/ros2_example/install/examples_rclpy_minimal_publisher:/home/mobin/ros2_example/install/examples_rclpy_minimal_client:/home/mobin/ros2_example/install/examples_rclpy_minimal_action_server:/home/mobin/ros2_example/install/examples_rclpy_minimal_action_client:/home/mobin/ros2_example/install/examples_rclpy_guard_conditions:/home/mobin/ros2_example/install/examples_rclpy_executors:/home/mobin/ros2_ws/install/rqt_joint_trajectory_controller:/home/mobin/ros2_ws/install/ros2_controllers_test_nodes:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/mobin/auriga_ros2_tasks/build/interfaces

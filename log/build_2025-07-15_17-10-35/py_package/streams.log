@@ -1,0 +1,24 @@
+[1.774s] Invoking command in '/home/mobin/auriga_ros2_tasks/build/py_package': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mobin/auriga_ros2_tasks/build/py_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mobin/auriga_ros2_tasks/install/py_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mobin/auriga_ros2_tasks/build/py_package/build --no-deps symlink_data
+[2.404s] running develop
+[2.816s] running egg_info
+[2.817s] creating py_package.egg-info
+[2.855s] writing py_package.egg-info/PKG-INFO
+[2.855s] writing dependency_links to py_package.egg-info/dependency_links.txt
+[2.856s] writing entry points to py_package.egg-info/entry_points.txt
+[2.856s] writing requirements to py_package.egg-info/requires.txt
+[2.856s] writing top-level names to py_package.egg-info/top_level.txt
+[2.856s] writing manifest file 'py_package.egg-info/SOURCES.txt'
+[2.934s] reading manifest file 'py_package.egg-info/SOURCES.txt'
+[2.935s] writing manifest file 'py_package.egg-info/SOURCES.txt'
+[2.976s] running build_ext
+[2.976s] Creating /home/mobin/auriga_ros2_tasks/install/py_package/lib/python3.12/site-packages/py-package.egg-link (link to .)
+[2.977s] Installing py_node script to /home/mobin/auriga_ros2_tasks/install/py_package/lib/py_package
+[2.978s] 
+[2.978s] Installed /home/mobin/auriga_ros2_tasks/build/py_package
+[2.978s] running symlink_data
+[2.978s] creating /home/mobin/auriga_ros2_tasks/install/py_package/share/ament_index
+[2.978s] creating /home/mobin/auriga_ros2_tasks/install/py_package/share/ament_index/resource_index
+[2.978s] creating /home/mobin/auriga_ros2_tasks/install/py_package/share/ament_index/resource_index/packages
+[2.978s] symbolically linking /home/mobin/auriga_ros2_tasks/build/py_package/resource/py_package -> /home/mobin/auriga_ros2_tasks/install/py_package/share/ament_index/resource_index/packages
+[2.978s] symbolically linking /home/mobin/auriga_ros2_tasks/build/py_package/package.xml -> /home/mobin/auriga_ros2_tasks/install/py_package/share/py_package
+[3.040s] Invoked command in '/home/mobin/auriga_ros2_tasks/build/py_package' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mobin/auriga_ros2_tasks/build/py_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mobin/auriga_ros2_tasks/install/py_package/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mobin/auriga_ros2_tasks/build/py_package/build --no-deps symlink_data
