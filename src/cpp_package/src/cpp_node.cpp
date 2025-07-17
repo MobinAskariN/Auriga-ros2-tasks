@@ -27,8 +27,7 @@ private:
             RCLCPP_ERROR(this->get_logger(), "Error: number became non-positive (%ld). Stopping.", current_num_);
             rclcpp::shutdown();
             return;
-        }
-        if (current_num_ == 1) {
+        } else if (current_num_ == 1) {
             RCLCPP_INFO(this->get_logger(), "Reached 1. Stopping.");
             rclcpp::shutdown();
             return;
