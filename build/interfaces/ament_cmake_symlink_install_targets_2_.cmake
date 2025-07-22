@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mobin/auriga_ros2_tasks/build/interfaces/rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_c.so" "TARGETS" "interfaces_s__rosidl_typesupport_c" "DESTINATION" "lib/python3.12/site-packages/interfaces")
