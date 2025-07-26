@@ -1,4 +1,0 @@
-[31mCMake Error at CMakeLists.txt:27 (rosidl_target_interfaces):
-  Unknown CMake command "rosidl_target_interfaces".
-
-[0m

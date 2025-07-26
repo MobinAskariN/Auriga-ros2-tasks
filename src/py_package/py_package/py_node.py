@@ -1,41 +1,38 @@
 import rclpy
 from rclpy.node import Node
-from interfaces.msg import Num
+from interfaces.srv import NumSrv
 
 class PyNode(Node):
     def __init__(self):
         super().__init__('py_node')
-        self.subscription = self.create_subscription(
-            Num,
-            'num_topic',
-            self.listener_callback,
-            10)
-        self.publisher = self.create_publisher(Num, 'num_topic_py', 10)
-        self.current_num = None
+        self.srv = self.create_service(NumSrv, 'num_srv', self.handle_num_srv)
 
-    def listener_callback(self, msg):
-        self.current_num = msg.num
-        self.get_logger().info(f'Received: {self.current_num}')
-        if self.current_num < 1:
-            self.get_logger().error(f'Error: received non-positive number ({self.current_num}). Stopping.')
-            rclpy.shutdown()
-            return
-        if self.current_num == 1:
+    def handle_num_srv(self, request, response):
+        current_num = request.num
+        self.get_logger().info(f'Received: {current_num}')
+        if current_num < 1:
+            self.get_logger().error(f'Error: received non-positive number ({current_num}). Stopping.')
+            response.result = current_num
+            response.finished = True
+            return response
+        if current_num == 1:
             self.get_logger().info('Reached 1. Stopping.')
-            rclpy.shutdown()
-            return
+            response.result = 1
+            response.finished = True
+            return response
         # If even, divide by 2 until odd
-        while self.current_num % 2 == 0 and self.current_num != 1:
-            self.current_num //= 2
-            if self.current_num < 1:
-                self.get_logger().error(f'Error: number became non-positive ({self.current_num}) during even processing. Stopping.')
-                rclpy.shutdown()
-                return
-        # If odd, send to cpp node
-        out_msg = Num()
-        out_msg.num = self.current_num
-        self.get_logger().info(f'Publishing: {out_msg.num}')
-        self.publisher.publish(out_msg)
+        while current_num % 2 == 0 and current_num != 1:
+            current_num //= 2
+            if current_num < 1:
+                self.get_logger().error(f'Error: number became non-positive ({current_num}) during even processing. Stopping.')
+                response.result = current_num
+                response.finished = True
+                return response
+        # If odd, send back to cpp node
+        response.result = current_num
+        response.finished = False
+        self.get_logger().info(f'Returning: {current_num}')
+        return response
 
 def main(args=None):
     rclpy.init(args=args)

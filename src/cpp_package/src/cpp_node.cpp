@@ -1,4 +1,5 @@
 #include <rclcpp/rclcpp.hpp>
+#include <interfaces/srv/num_srv.hpp>
 #include <interfaces/msg/num.hpp>
 #include <random>
 
@@ -7,9 +8,7 @@ using std::placeholders::_1;
 class CppNode : public rclcpp::Node {
 public:
     CppNode() : Node("cpp_node") {
-        publisher_ = this->create_publisher<interfaces::msg::Num>("num_topic", 10);
-        subscription_ = this->create_subscription<interfaces::msg::Num>(
-            "num_topic_py", 10, std::bind(&CppNode::topic_callback, this, _1));
+        client_ = this->create_client<interfaces::srv::NumSrv>("num_srv");
         // Initialize random number
         std::random_device rd;
         std::mt19937 gen(rd());
@@ -41,12 +40,31 @@ private:
                 return;
             }
         }
-        // Publish even number
-        auto msg = interfaces::msg::Num();
-        msg.num = current_num_;
-        RCLCPP_INFO(this->get_logger(), "Publishing: %ld", msg.num);
-        publisher_->publish(msg);
+        // Call Python node via service
+        if (!client_->wait_for_service(std::chrono::seconds(2))) {
+            RCLCPP_ERROR(this->get_logger(), "Service not available");
+            rclcpp::shutdown();
+            return;
+        }
+        
+        RCLCPP_INFO(this->get_logger(), "Calling service on number: %ld", current_num_);
+        auto request = std::make_shared<interfaces::srv::NumSrv::Request>();
+        request->num = current_num_;
+        auto future = client_->async_send_request(request,
+            std::bind(&CppNode::handle_response, this, std::placeholders::_1));
         timer_->cancel(); // Wait for Python node response
+    }
+
+    void handle_response(rclcpp::Client<interfaces::srv::NumSrv>::SharedFuture future) {
+        auto response = future.get();
+        current_num_ = response->result;
+        RCLCPP_INFO(this->get_logger(), "Received: %ld", current_num_);
+        if (response->finished || current_num_ == 1) {
+            RCLCPP_INFO(this->get_logger(), "Process finished. Stopping.");
+            rclcpp::shutdown();
+            return;
+        }
+        timer_->reset();
     }
 
     void topic_callback(const interfaces::msg::Num::SharedPtr msg) {
@@ -65,8 +83,7 @@ private:
         timer_->reset();
     }
 
-    rclcpp::Publisher<interfaces::msg::Num>::SharedPtr publisher_;
-    rclcpp::Subscription<interfaces::msg::Num>::SharedPtr subscription_;
+    rclcpp::Client<interfaces::srv::NumSrv>::SharedPtr client_;
     rclcpp::TimerBase::SharedPtr timer_;
     int64_t current_num_;
 };

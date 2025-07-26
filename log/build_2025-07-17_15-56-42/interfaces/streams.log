@@ -1,8 +1,0 @@
-[0.021s] Invoking command in '/home/mobin/auriga_ros2_tasks/build/interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/mobin/auriga_ros2_tasks/build/interfaces -- -j16 -l16
-[0.137s] failed to create symbolic link '/home/mobin/auriga_ros2_tasks/build/interfaces/ament_cmake_python/interfaces/interfaces' because existing path cannot be removed: Is a directory
-[0.139s] gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_interfaces.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_interfaces] Error 1
-[0.140s] [  2%] Built target interfaces__rosidl_generator_type_description
-[0.140s] gmake[1]: *** [CMakeFiles/Makefile2:452: CMakeFiles/ament_cmake_python_symlink_interfaces.dir/all] Error 2
-[0.140s] gmake[1]: *** Waiting for unfinished jobs....
-[0.142s] gmake: *** [Makefile:146: all] Error 2
-[0.147s] Invoked command in '/home/mobin/auriga_ros2_tasks/build/interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/mobin/auriga_ros2_tasks/build/interfaces -- -j16 -l16

@@ -1,2 +1,0 @@
-Invoking command in '/home/mobin/auriga_ros2_tasks/build/interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/mobin/auriga_ros2_tasks/build/interfaces -- -j16 -l16
-Invoked command in '/home/mobin/auriga_ros2_tasks/build/interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/mobin/auriga_ros2_tasks/build/interfaces -- -j16 -l16

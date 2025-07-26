@@ -21,9 +21,6 @@ target_include_directories(cpp_node PUBLIC
 target_compile_features(cpp_node PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
 ament_target_dependencies(cpp_node rclcpp interfaces)
 
-install(DIRECTORY include/
-  DESTINATION include/${PROJECT_NAME})
-
 install(TARGETS cpp_node
   DESTINATION lib/${PROJECT_NAME})
 
