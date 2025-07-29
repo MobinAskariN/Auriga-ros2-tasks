@@ -56,6 +56,8 @@ def main(args=None):
         pass
 
     node.destroy_node()
+
+    # rclpy.spin(node)
     rclpy.shutdown()
 
 if __name__ == '__main__':

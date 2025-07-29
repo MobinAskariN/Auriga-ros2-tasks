@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'py_node = py_package.py_node:main'
+            'socket_py_node = py_package.py_node_socket:main'
         ],
     },
 )
