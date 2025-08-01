@@ -18,12 +18,23 @@ add_executable(cpp_node src/cpp_node.cpp)
 target_include_directories(cpp_node PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include/${PROJECT_NAME}>)
-target_compile_features(cpp_node PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
+target_compile_features(cpp_node PUBLIC c_std_99 cxx_std_17) 
 ament_target_dependencies(cpp_node rclcpp interfaces)
-
 install(TARGETS cpp_node
   DESTINATION lib/${PROJECT_NAME})
 
+
+add_executable(socket_cpp_node src/cpp_node_socket.cpp)
+target_include_directories(socket_cpp_node PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include/${PROJECT_NAME}>)
+target_compile_features(socket_cpp_node PUBLIC c_std_99 cxx_std_17)
+ament_target_dependencies(socket_cpp_node rclcpp interfaces)
+install(TARGETS socket_cpp_node
+  DESTINATION lib/${PROJECT_NAME})
+
+
+  
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights

@@ -1,4 +1,3 @@
-// cpp_node_no_spin.cpp
 #include <rclcpp/rclcpp.hpp>
 #include <cstdlib>
 #include <ctime>
@@ -17,7 +16,7 @@ public:
         sockaddr_in serv_addr{};
         serv_addr.sin_family = AF_INET;
         serv_addr.sin_port = htons(5000);
-        inet_pton(AF_INET, "192.168.X.X", &serv_addr.sin_addr);  // Change to correct IP
+        inet_pton(AF_INET, "192.168.1.101", &serv_addr.sin_addr);  // Change to correct IP
 
         if (connect(sock, (sockaddr*)&serv_addr, sizeof(serv_addr)) < 0) {
             RCLCPP_ERROR(this->get_logger(), "Connection failed");
