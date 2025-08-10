@@ -163,3 +163,26 @@ All commands should be executed in separate terminals :
 
 Congratulations! Your two ROS 2 nodes should now communicate over sockets and collaborate to compute the Collatz sequence across machines.
 
+---
+
+## 8. Running Both Nodes with a Single Command (Multi‑Machine)
+
+Because your Python node is the **server** (listening) and your C++ node is the **client** (connecting), we must start the server first.
+
+You can automate both starts using SSH from the client machine:
+
+Make start_collatz.sh executable:
+
+```bash
+chmod +x start_collatz.sh
+```
+
+Run it from the **client** machine:
+
+```bash
+./start_collatz.sh
+```
+
+> Ensure you have password‑less SSH set up between the client and server machines (`ssh-copy-id`).
+
+---
