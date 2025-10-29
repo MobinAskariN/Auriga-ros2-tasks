@@ -34,6 +34,15 @@ install(TARGETS socket_cpp_node
   DESTINATION lib/${PROJECT_NAME})
 
 
+add_executable(controller src/radin_the_controller.cpp)
+target_include_directories(controller PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include/${PROJECT_NAME}>)
+target_compile_features(controller PUBLIC c_std_99 cxx_std_17)
+ament_target_dependencies(controller rclcpp interfaces)
+install(TARGETS controller
+  DESTINATION lib/${PROJECT_NAME})
+
   
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

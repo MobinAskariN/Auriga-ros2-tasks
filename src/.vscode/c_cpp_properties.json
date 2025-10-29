@@ -15,16 +15,18 @@
         "/home/mobin/ros2_ws/install/kinematics_interface/include/**",
         "/home/mobin/ros2_ws/install/controller_manager_msgs/include/**",
         "/home/mobin/ros2_ws/install/control_msgs/include/**",
-        "/opt/ros/jazzy/include/**",
+        "/opt/ros/humble/include/**",
         "/home/mobin/auriga_ros2_tasks/src/cpp_package/include/**",
-        "/usr/include/**",
-        "~/auriga_ros2_tasks/install/interfaces/include/**"
+        "/home/mobin/auriga_ros2_tasks/build/**",
+        "/home/mobin/auriga_ros2_tasks/install/**",
+        "/home/mobin/auriga_ros2_tasks/install/interfaces/include/**",
+        "/usr/include/**"
       ],
       "name": "ROS",
       "intelliSenseMode": "gcc-x64",
       "compilerPath": "/usr/bin/gcc",
       "cStandard": "gnu11",
-      "cppStandard": "c++14"
+      "cppStandard": "c++17"
     }
   ],
   "version": 4
