@@ -13,20 +13,12 @@ class Stanley_Pid{
     
 
     public:
-
-        float calculate_feed_forward_term() {return atan(lenght * kappa);}
+    
         float calculate_steering_angle(){
 
-            Steering_angle = heading_error + atan(k * cross_track_error / (k_s + velocity)) + calculate_feed_forward_term();
+            Steering_angle = heading_error + atan(k * cross_track_error / (k_s + velocity)) + atan(lenght * kappa);
 
         } 
-
-        
-        void calculate_speed(){
-
-            velocity -= (k_p * kappa);
-
-        }
 
     
 
