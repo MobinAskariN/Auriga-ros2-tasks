@@ -2,6 +2,7 @@
 #include <chrono>
 #include <functional>
 #include <string>
+#include <iostream>
 
 
 #include "rclcpp/rclcpp.hpp"
@@ -32,6 +33,7 @@ class Controller : public rclcpp::Node
         distance = msg.distance;
         heading_error = msg.heading_error;
         second_derivation = msg.second_derivation;
+        std::cout << distance << std::endl;
     }
 
     void publish_controll()
