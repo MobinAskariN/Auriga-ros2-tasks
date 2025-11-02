@@ -2,10 +2,12 @@ import rclpy
 from rclpy.node import Node
 from interfaces.msg import ImageProcessor
 from interfaces.msg import ControllOptions
+import py_package.yekta_the_processor as yekta
 from py_package.yekta_the_processor import calculation
 from py_package.avis.avisengine import Car
 import cv2
 import time
+import threading
 
 autonomous_mode = True
 
@@ -22,6 +24,7 @@ class Processor(Node):
             'controll_data',
             self.controll,
             10)
+        
 
 
     def process_image(self):
@@ -36,12 +39,13 @@ class Processor(Node):
                 carSpeed = car.getSpeed()
                 # car.setSpeed(10)
 
-
+                # distance_in_moment, degree_in_moment, second_derivative, mean_k = 0
                 # if image is not None and image.any():
-                #    q cv2.imshow('frames', image)
+                #     cv2.imshow('frames', image)
+                distance_in_moment, degree_in_moment, second_derivative, mean_k = calculation(image)
 
                 # get data from processor and publish it to the controller
-                distance_in_moment, degree_in_moment, second_derivative, mean_k = calculation(image)
+                # cv2.imshow(image)
 
                 if not autonomous_mode:
                     key = cv2.waitKey(50) & 0xFF        
@@ -68,13 +72,26 @@ class Processor(Node):
                     #     break
                 
                 else:
+                    key = cv2.waitKey(1) & 0xFF        
                     process_data = ImageProcessor()
                     process_data.heading_error = degree_in_moment
                     process_data.distance = distance_in_moment
                     process_data.second_derivation = second_derivative
                     process_data.mean_k = mean_k
+                    process_data.velocity = carSpeed
+
+                    # print(distance_in_moment, degree_in_moment, mean_k, carSpeed)
 
                     self.publisher_.publish(process_data)
+
+                self.get_logger().info('left : "%d"' % yekta.rf_1)
+                self.get_logger().info('right : "%d"' % yekta.rf_2)
+                #self.get_logger().info('right_x  ========>: "%d"' % yekta.rx)
+                #self.get_logger().info('right _y ========>: "%d"' % yekta.ry)
+                #self.get_logger().info('right : "%s"' % yekta.flag1)
+                #self.get_logger().info('right : "%s"' % yekta.flag2)
+                #self.get_logger().info('right fit3 : "%f"' % yekta.rf_3)
+
 
         finally:
             car.stop()
@@ -85,6 +102,7 @@ class Processor(Node):
         # self.get_logger().info('I heard: "%s"' % msg.data)
         self.car.setSpeed(msg.speed)
         self.car.setSteering(msg.steering)
+        # print("asdas")
 
 
 
@@ -93,7 +111,12 @@ class Processor(Node):
 def main(args=None):
     rclpy.init(args=args)
     node = Processor()
-    node.process_image()
+
+    thread = threading.Thread(target=node.process_image)
+    thread.start()
+
+    rclpy.spin(node)
+
     node.destroy_node()
     rclpy.shutdown()
 

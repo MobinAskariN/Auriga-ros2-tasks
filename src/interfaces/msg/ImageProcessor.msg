@@ -2,3 +2,4 @@ float64 heading_error
 float64 distance
 float64 second_derivation
 float64 mean_k
+int8 velocity
