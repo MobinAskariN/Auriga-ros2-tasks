@@ -2,8 +2,8 @@ import rclpy
 from rclpy.node import Node
 from interfaces.msg import ImageProcessor
 from interfaces.msg import ControllOptions
-import py_package.yekta_the_processor as yekta
-from py_package.yekta_the_processor import calculation
+import py_package.sign as yekta
+from py_package.sign import calculation
 from py_package.avis.avisengine import Car
 import cv2
 import time
