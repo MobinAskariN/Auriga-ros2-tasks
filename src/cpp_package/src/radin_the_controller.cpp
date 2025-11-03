@@ -7,6 +7,7 @@
 
 
 
+
 #include "rclcpp/rclcpp.hpp"
 #include "interfaces/msg/image_processor.hpp"
 #include "interfaces/msg/controll_options.hpp"
@@ -18,14 +19,13 @@ class Controller : public rclcpp::Node
 {
     public:
 
-    //float k {0.35 - 0.05 * car_velocity};
-    //float k_p {0};
-    //float k_ff {2.8 - 0.05 * car_velocity};
-    //float k_s {0.0001};
-    float k {0.24};
-    float k_ff {2.8};
+    //float k {0.22 + std::abs(mean_k)};
+    //float k_ff {2.8 + std::abs(mean_k)};
     float k_h {1};
     float k_s {0.0001};
+    float k {0.22 + (2) * std::abs(mean_k)};
+    float k_ff {2.8 + (1.5) * std::abs(mean_k)}; 
+    //flaot K_mean_buffer [5] = {};
 
 
     Controller()
@@ -43,6 +43,7 @@ class Controller : public rclcpp::Node
         
         
         velocity = 100;
+        
         //velocity = 100;
         steering_angle =  k_h * heading_error + atan((k * distance) / (car_velocity)) * (180 / 3.14) +  k_ff * atan(mean_k)  * (180 / 3.14);
         

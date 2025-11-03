@@ -109,7 +109,7 @@ def find_road_lines(binary_warped):
     
 
     if rf_1 <= 500 and rf_2 > 500 :
-        left_fitx = right_fit[0]*ploty**2 + right_fit[1]*ploty + right_fit[2] - 245
+        left_fitx = right_fit[0]*ploty**2 + right_fit[1]*ploty + right_fit[2] - 200
         left_fit = right_fit
         left_fit[2] -= 200
         last_left_lane = left_fitx
@@ -119,7 +119,7 @@ def find_road_lines(binary_warped):
 
     elif rf_1 > 500 and rf_2 <= 500:
         right_fitx = left_fit[0]*ploty**2 + left_fit[1]*ploty + left_fit[2] + 230
-        right_fit[2] += 210
+        right_fit[2] += 230
         last_right_lane = right_fitx 
         print("right_fittttttttttttttt= ",right_fit)
         print("left_fittttttttttttttt= ",left_fit)
