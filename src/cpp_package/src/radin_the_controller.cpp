@@ -4,6 +4,7 @@
 #include <string>
 #include <iostream>
 #include <cmath>
+#include <queue>
 
 
 
@@ -23,8 +24,9 @@ class Controller : public rclcpp::Node
     //float k_ff {2.8 + std::abs(mean_k)};
     float k_h {1};
     float k_s {0.0001};
-    float k {0.22 + (2) * std::abs(mean_k)};
-    float k_ff {2.8 + (1.5) * std::abs(mean_k)}; 
+    float k {0.24 + (2.5) * std::abs(mean_k)};
+    float k_ff {2.8 + (1.5) * std::abs(mean_k)};
+    queue <flaot> K_mean_buffer 
     //flaot K_mean_buffer [5] = {};
 
 
