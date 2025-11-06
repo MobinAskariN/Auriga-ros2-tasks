@@ -14,7 +14,6 @@ def generate_launch_description():
             name='runner',
             output='screen'
             #respawn=True
-
         ),
         TimerAction(
         # Launch vision.py node
