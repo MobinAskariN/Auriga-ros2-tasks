@@ -12,9 +12,8 @@ def generate_launch_description():
             package='py_package',
             executable='main',
             name='runner',
-            output='screen',
-            respawn=True
-
+            output='screen'
+            #respawn=True
         ),
         TimerAction(
         # Launch vision.py node
@@ -24,7 +23,7 @@ def generate_launch_description():
             executable='controller',     # name of compiled cpp executable
             name='controller',
             output='screen',
-            respawn=True
+            #respawn=True
             # optionally pass arguments
             # arguments=['--ros-args', '--log-level', 'info']
             )]

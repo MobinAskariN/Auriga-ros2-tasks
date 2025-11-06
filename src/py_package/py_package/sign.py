@@ -19,7 +19,7 @@ def find_road_lines(binary_warped):
 
     #midpoint = int(histogram.shape[0] // 2)
     leftx_base = np.argmax(histogram[:100])
-    rightx_base = np.argmax(histogram[180:]) + 180
+    rightx_base = np.argmax(histogram[180:226]) + 180
 
     nwindows = 15
     margin = 20
@@ -152,7 +152,7 @@ def find_road_lines(binary_warped):
 def binary_threshold(img):
     
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    # cv2.imshow("Gray", gray)
+    #cv2.imshow("Gray", gray)
     blurred = cv2.bilateralFilter(gray, 1, 75, 75)
     # cv2.imshow("blurr", blurred)
 
@@ -172,17 +172,17 @@ def binary_threshold(img):
     return binary
     
 #-----------------------------------------------------------------
-
+     
 def calculation(frame):
     
     # frame = cv2.imread("/home/yekta/Downloads/photo_2025-10-28_06-46-22.jpg")
     resized_frame = cv2.resize(frame, (300, 200))   
 
     src = np.float32(
-        [[69, 98],  #TL
-        [220, 94],   #TR
-        [299, 140],  #BR
-        [15, 148]]   #BL
+        [[117, 93],  #TL
+        [241, 92],   #TR
+        [271, 144],  #BR
+        [37, 145]]   #BL
                     )
             
     dst = np.float32(
@@ -242,6 +242,23 @@ def calculation(frame):
         degree= np.degrees(radian)   
         derivation_sum += degree
 
+    #getimg(frame)
+    '''c = False
+    output = frame.copy()
+    cv2.imshow("frame", frame)
+
+    gray_sign = cv2.cvtColor(output, cv2.COLOR_BGR2GRAY)
+    cv2.imshow("gray_sign", gray_sign[174:280, 296:439])
+    circle = cv2.HoughCircles(gray_sign[174:280, 296:439], cv2.HOUGH_GRADIENT, dp=2, minDist=100, param1=150, param2=30, minRadius=8, maxRadius=24)
+
+    if circle is not None:
+         c = True
+         circles = np.uint16(np.around(circle))
+         x, y, r = circles[0][0]
+         cv2.circle(output, (x,y), r, (0,255,0), 2)
+         cv2.circle(output, (x, y), 2, (0,0,255), 3)
+
+    cv2.imshow("circle", output)'''
     #-------- clean code !! ---------------------------------------------
 
     '''for y in range(125, 201, 25):

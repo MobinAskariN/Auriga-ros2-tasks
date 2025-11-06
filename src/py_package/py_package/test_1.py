@@ -3,15 +3,13 @@ import cv2
 
 global rf_1 
 global rf_2 
-global rx
-global ry
+#global rf_3
 
 last_left_lane = []
 last_right_lane = []
-right_fit = []
 
 def find_road_lines(binary_warped):
-    global rf_1, rf_2, rx, ry
+    global rf_1, rf_2
     global last_left_lane, last_right_lane
 
     histogram = np.sum(binary_warped[binary_warped.shape[0]//2:, :], axis=0)
@@ -21,14 +19,14 @@ def find_road_lines(binary_warped):
     leftx_base = np.argmax(histogram[:100])
     rightx_base = np.argmax(histogram[180:]) + 180
 
-    nwindows = 15
+    nwindows = 10
     margin = 20
     minpix = 50
     window_height = int(binary_warped.shape[0] // nwindows)
 
-    nonzero1 = binary_warped.nonzero()
-    nonzeroy = np.array(nonzero1[0])
-    nonzerox = np.array(nonzero1[1])
+    nonzero = binary_warped.nonzero()
+    nonzeroy = np.array(nonzero[0])
+    nonzerox = np.array(nonzero[1])
     
     leftx_current = leftx_base
     rightx_current = rightx_base
@@ -74,65 +72,22 @@ def find_road_lines(binary_warped):
 
     rf_1 =  len(left_lane_inds)
     rf_2 = len(right_lane_inds)
-    rx = len(rightx)
-    ry = len(righty)
-
-    print(len(rightx), len(righty), "<=================================", flush=True)
-    print(len(leftx), len(lefty), "<===============++++==============", flush=True)
-
-    left_fit = np.polyfit(lefty, leftx, 2) if len(leftx) > 0 else [0, 0, 0]
-    right_fit = np.polyfit(righty, rightx, 2) if len(rightx) > 0 else [0, 0, 0]  
-    left_fit_d1 = np.polyfit(lefty, leftx, 1) if len(leftx) > 0 else [0, 0, 0]
-    right_fit_d1 = np.polyfit(righty, rightx, 1) if len(rightx) > 0 else [0, 0, 0]  
-
-    if  rf_1 >= 800 :
-            left_fitx = left_fit[0]*ploty**2 + left_fit[1]*ploty + left_fit[2]
-            last_left_lane = left_fitx
-            print("1111111111111111111111111111", flush=True)
-    elif rf_1 < 800 and rf_1 > 500 :
-            left_fitx = left_fit_d1[0]*ploty + left_fit_d1[1]
-            left_fit = np.insert(left_fit_d1,0,0)
-            last_left_lane = left_fitx
-            print("2222222222222222222222222222", flush=True)
+    #rf_3 = right_fit[2]
   
+    if rf_1 >= 1000:
+        left_fit = np.polyfit(lefty, leftx, 2) 
+        last_left_lane = left_fit
+    else:
+        left_fit = last_left_lane
 
-    if rf_2 >= 800:
-            right_fitx = right_fit[0]*ploty**2 + right_fit[1]*ploty + right_fit[2]
-            last_right_lane = right_fitx
-            print("3333333333333333333333333333", flush=True)
-    elif rf_2 < 800 and rf_2 > 500 : 
-            right_fitx = right_fit_d1[0]*ploty + right_fit_d1[1] 
-            right_fit = np.insert(right_fit_d1,0,0)
-            print(right_fit, flush=True)
-            last_right_lane = right_fitx
-            print("444444444444444444444444444", flush=True)
-    
+    if rf_2 >= 1000:
+        right_fit = np.polyfit(righty, rightx, 2) 
+        last_right_lane = right_fit
+    else:    
+        right_fit = last_right_lane
 
-    if rf_1 <= 500 and rf_2 > 500 :
-        left_fitx = right_fit[0]*ploty**2 + right_fit[1]*ploty + right_fit[2] - 200
-        left_fit = right_fit
-        left_fit[2] -= 200
-        last_left_lane = left_fitx
-        print("right_fittttttttttttttt= ",right_fit)
-        print("left_fittttttttttttttt= ",left_fit)
-        print("5555555555555555555555555555555", flush=True)
-
-    elif rf_1 > 500 and rf_2 <= 500:
-        right_fitx = left_fit[0]*ploty**2 + left_fit[1]*ploty + left_fit[2] + 230
-        right_fit[2] += 230
-        last_right_lane = right_fitx 
-        print("right_fittttttttttttttt= ",right_fit)
-        print("left_fittttttttttttttt= ",left_fit)
-        print("66666666666666666666666666666666", flush=True)
-
-    elif rf_1 <= 500 and rf_2 <= 500:     
-        right_fitx = last_right_lane
-        # right_fitx = right_fit[0]*ploty**2 + right_fit[1]*ploty + right_fit[2]
-        left_fitx = last_left_lane
-        # left_fitx = left_fit[0]*ploty**2 + left_fit[1]*ploty + left_fit[2]
-        print("7777777777777777777777777777777", flush=True)
-             
-          
+    left_fitx = left_fit[0]*ploty**2 + left_fit[1]*ploty + left_fit[2]
+    right_fitx = right_fit[0]*ploty**2 + right_fit[1]*ploty + right_fit[2]
 
     center_fitx = (left_fitx + right_fitx) / 2
     center_points = np.array([np.transpose(np.vstack([center_fitx, ploty]))], dtype=np.int32)
@@ -143,7 +98,7 @@ def find_road_lines(binary_warped):
     out_img[lefty, leftx] = [255, 0, 0]
     out_img[righty, rightx] = [0, 255, 0]
     
-    #cv2.polylines(out_img, center_points, isClosed=False, color=(0, 255, 255), thickness=2)
+    cv2.polylines(out_img, center_points, isClosed=False, color=(0, 255, 255), thickness=2)
     
     return out_img, left_fitx, right_fitx, ploty, left_fit, right_fit, a, b, c
 
@@ -179,9 +134,9 @@ def calculation(frame):
     resized_frame = cv2.resize(frame, (300, 200))   
 
     src = np.float32(
-        [[69, 98],  #TL
+        [[60, 94],  #TL
         [220, 94],   #TR
-        [299, 140],  #BR
+        [283, 153],  #BR
         [15, 148]]   #BL
                     )
             
@@ -280,9 +235,9 @@ def calculation(frame):
     #---------------------------------------------------------------------
             
     mean_distance = distance_sum/10
-    cv2.putText(resized_frame, "Distance:"+str(mean_distance), (10,20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 2 )
+    cv2.putText(resized_frame, "Distance:"+str(distance_in_moment), (10,20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 2 )
     mean_degree = derivation_sum/10
-    cv2.putText(resized_frame, "Degree:"+str(mean_degree), (10,40), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 2 )
+    cv2.putText(resized_frame, "Degree:"+str(degree_in_moment), (10,40), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 2 )
     #cv2.putText(resized_frame, "second_derivative:"+str(second_derivative), (10,60), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 1 )
     cv2.putText(resized_frame, "mean_k:"+str(mean_k), (10,60), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 1 )
 
